@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "VivaldiD CL";
+    src: url("../assets/fonts/VIVADCL_.TTF") format("ttf")
+}
+@font-face {
+    font-family: "Arial Narrow";
+    src: url("../assets/fonts/6428.ttf") format("ttf")
+}
+@font-face {
+    font-family: "Arial";
+    src: url("../assets/fonts/9041.ttf") format("ttf")
+}
+@font-face {
+    font-family: "Codec Cold Trial";
+    src: url("../assets/fonts/Codec-Cold-News-trial.ttf") format("ttf")
+}
+@font-face {
+    font-family: 'Codec Cold News Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Codec Cold News Italic'), url('../assets/fonts/codec/Codec-Cold-News-Italic-trial.woff') format('woff');
+}
+@font-face {
+    font-family: 'Codec Cold Trial News';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Codec Cold Trial News'), url('../assets/fonts/codec/Codec-Cold-News-trial.woff') format('woff');
+}
+
+
+body{
+    background: url(../assets/images/bg.jpg) fixed;
+    background-size: cover;
+}
+img{
+    max-width: 100%;
+}
+header .logo img {
+    width: 125px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #404f6e;
+    text-transform: uppercase;
+    font-family: "Arial Narrow";
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+}
+.navbar-dark .navbar-nav .nav-link:after{
+    content: '';
+    display: none;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    border: 10px solid;
+    border-color: #404f6e transparent transparent transparent;
+    margin-left: -10px;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #404f6e;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus:after, .navbar-dark .navbar-nav .nav-link:hover:after,
+.navbar-dark .navbar-nav .active .nav-link:after{
+    display: block;
+}
+.navbar-dark .navbar-toggler{
+    background:#404f6e;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #404f6e !important;
+}
+
+.container.adverts {
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin-top: 20px;
+    padding: 60px;
+    position: relative;
+}
+
+h1, .h1{
+    font-family: "VivaldiD CL";
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin: 20px 0 30px 0
+}
+h1:before, .h1:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 0;
+    right: 0;
+    border-top: 2px #ddd solid
+}
+h1 span, .h1 span{
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.page-link {
+    border: none !important;
+}
+.page-item.disabled .page-link.prev:before{
+    content:'';
+    display: block;
+    border: 20px solid;
+    border-color: transparent #ddd transparent transparent;
+}
+
+.page-item.disabled .page-link.next:before{
+    content:'';
+    display: block;
+    border: 20px solid;
+    border-color: transparent  transparent transparent #ddd;
+}
+
+.page-item .page-link.prev:before{
+    content:'';
+    display: block;
+    border: 20px solid;
+    border-color: transparent #404f6e transparent transparent;
+}
+
+.page-item .page-link.next:before{
+    content:'';
+    display: block;
+    border: 20px solid;
+    border-color: transparent  transparent transparent #404f6e;
+}
+.content-advert{
+    padding-left: 10px;
+}
+.picture-advert{
+    padding-left: 10px;
+}
+.container-advert{
+    background: #e8e8e8;
+    padding: 30px;
+}
