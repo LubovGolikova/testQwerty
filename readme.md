@@ -1,4 +1,3 @@
-This is a test project and the development of this project took 2 days.
 Clone the project:
     https://github.com/LubovGolikova/testQwerty.git
 Setup Laravel:
